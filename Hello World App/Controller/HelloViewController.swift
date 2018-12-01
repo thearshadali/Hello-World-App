@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class HelloViewController: UIViewController {
+    
+     var helloView: HelloView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        helloView = HelloView(frame: view.bounds)
+        view.addSubview(helloView)
     }
-
 
 }
 
